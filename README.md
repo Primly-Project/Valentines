@@ -38,11 +38,11 @@ Section "**Gallery**"
 ```yaml
 # ╔════════════════════════════════════════════════════════════════════╗
 # ║                     VALENTINES PLUGIN CONFIG                       ║
-# ║                     Update: February 17, 2026                      ║
+# ║                     Update: February 20, 2026                      ║
 # ╚════════════════════════════════════════════════════════════════════╝
 
 # Internal version tracking - DO NOT CHANGE THIS VALUE
-config-version: "2026+1.2.2"
+config-version: "2026+1.3"
 
 # ╔════════════════════════════════════════════════════════════════════╗
 # ║                          GENERAL SETTINGS                          ║
@@ -247,19 +247,6 @@ performance:
 # Lower = more frequent saves
 # Value is in MINUTES
 auto-save: 30
-
-# ╔════════════════════════════════════════════════════════════════════╗
-# ║                           UPDATE CHECKER                           ║
-# ╚════════════════════════════════════════════════════════════════════╝
-
-update-checker:
-  # Check GitHub for new plugin versions on startup and periodically
-  # Notifies ops when updates are available
-  enabled: true
-
-  # How often to check for updates
-  # Value is in HOURS
-  check-interval: 24
 
 # ╔════════════════════════════════════════════════════════════════════╗
 # ║                         ACHIEVEMENT SYSTEM                         ║
@@ -567,33 +554,5 @@ achievements:
   first_mood_set:
     name: "Mood Setter"
     description: "Set your mood for the first time"
-```
-</details>
-
-<details>
-  <summary><strong>likes.yml</strong></summary>
-
-```yaml
-```
-</details>
-
-<details>
-  <summary><strong>marriages.yml</strong></summary>
-
-```yaml
-```
-</details>
-
-<details>
-  <summary><strong>playerdata.yml</strong></summary>
-
-```yaml
-```
-</details>
-
-<details>
-  <summary><strong>proposals.yml</strong></summary>
-
-```yaml
 ```
 </details>
