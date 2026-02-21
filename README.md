@@ -38,11 +38,11 @@ Section "**Gallery**"
 ```yaml
 # ╔════════════════════════════════════════════════════════════════════╗
 # ║                     VALENTINES PLUGIN CONFIG                       ║
-# ║                     Update: February 20, 2026                      ║
+# ║                     Update: February 21, 2026                      ║
 # ╚════════════════════════════════════════════════════════════════════╝
 
 # Internal version tracking - DO NOT CHANGE THIS VALUE
-config-version: "2026+1.3"
+config-version: "2026+1.3.1"
 
 # ╔════════════════════════════════════════════════════════════════════╗
 # ║                          GENERAL SETTINGS                          ║
@@ -556,3 +556,5 @@ achievements:
     description: "Set your mood for the first time"
 ```
 </details>
+
+© 2026 Primly Project. All rights reserved. [Primly](https://modrinth.com/organization/primly) | [Primly-Packs](https://modrinth.com/organization/primly-packs) | [Github](https://github.com/Primly-Project)
