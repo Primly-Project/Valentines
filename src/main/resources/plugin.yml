@@ -1,0 +1,59 @@
+name: Valentines
+version: '2026+1.3.2-community'
+main: primly.valentines.Valentines
+api-version: '1.19'
+prefix: 'Primly'
+load: STARTUP
+authors: [ PRIMLY (Wejkey) ]
+description: Valentines Plugin - Love but in Minecraft
+website: https://primly.wejkey.org
+commands:
+  valentines:
+    description: Main valentines command
+    aliases: [val, love]
+    permission: valentines.use
+  vgui:
+    description: Opens valentines GUI
+    aliases: [vg, lovegui]
+    permission: valentines.use
+  marry:
+    description: Marry another player
+    permission: valentines.marry
+  divorce:
+    description: Divorce your partner
+    permission: valentines.divorce
+  hug:
+    description: Hug a player
+    permission: valentines.use
+  kiss:
+    description: Kiss a player
+    permission: valentines.use
+  like:
+    description: Like a player
+    permission: valentines.use
+  mood:
+    description: Set your mood
+    permission: valentines.use
+  achievements:
+    description: View your achievements
+    aliases: [ach, achieve]
+    permission: valentines.use
+permissions:
+  valentines.use:
+    description: Allows use of default commands
+    default: true
+  valentines.effect:
+    description: Allows players to have effects around them
+    default: true
+  valentines.marry:
+    description: Allows to marry someone
+    default: true
+  valentines.divorce:
+    description: Allows divorce with partner
+    default: true
+  valentines.admin:
+    description: Allows access to administrative commands
+    default: op
+  valentines.reload:
+    description: Allows reloading the plugin
+    default: op
