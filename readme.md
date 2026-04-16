@@ -1,3 +1,10 @@
+---
+
+## IMPORTANT UPDATE
+Before downloading this project, you have to read [Terms of Use](https://primly.wejkey.org/terms.html)
+
+---
+
 # Valentines
 
 ---
@@ -11,10 +18,11 @@ If you're interested, you can check older [Open-Source](https://github.com/Priml
 
 ---
 
-## Features
+## Features `(2026+1.4.2)`
 
 - GUI: Keep it simple with only `/vgui` command
 - Marriages: Marry your favorite person
+- Friends system: No friends in real life? Don't worry.
 - Achievements: Unlock them while playing or trying new functions
 - Mood: You're sad? Happy? Or just something in between?
 - Effects: You look better with effects around you
@@ -24,7 +32,7 @@ If you're interested, you can check older [Open-Source](https://github.com/Priml
 
 ---
 
-## Commands & Permissions
+## Commands & Permissions `(2026+1.4)`
 
 | Command       | Alias | Description                 | Permission           |
 |---------------|-------|---------------------|--------------------|
@@ -37,7 +45,7 @@ If you're interested, you can check older [Open-Source](https://github.com/Priml
 
 ---
 
-## Placeholders
+## Placeholders `(2026+1.4)`
 
 Can be enabled or disabled in `config.yml`.
 
@@ -106,24 +114,24 @@ Format: `%valentines_top_<type>_<position>%`
 
 ---
 
-## Images / Screenshots
+## Images / Screenshots `(2026+1.4.2)`
 
 Section "**Gallery**"
 
 ---
 
-## Files
+## Files `(2026+1.4.2)`
 <details>
   <summary><strong>config.yml</strong></summary>
 
 ```yaml
 # ╔════════════════════════════════════════════════════════════════════╗
 # ║                     VALENTINES PLUGIN CONFIG                       ║
-# ║                      Update: March 26, 2026                        ║
+# ║                      Update: April 15, 2026                        ║
 # ╚════════════════════════════════════════════════════════════════════╝
 
 # Internal version tracking - DO NOT CHANGE THIS VALUE
-config-version: "2026+1.4.1"
+config-version: "2026+1.4.2"
 
 # ╔════════════════════════════════════════════════════════════════════╗
 # ║                          GENERAL SETTINGS                          ║
@@ -365,6 +373,13 @@ version-checker:
   # Minimum interval between automatic checks to avoid spam/API limits
   # Value is in SECONDS
   minimum-interval-seconds: 600
+# ╔════════════════════════════════════════════════════════════════════╗
+# ║                         FRIENDS SETTINGS                           ║
+# ╚════════════════════════════════════════════════════════════════════╝
+friends:
+  # Controls messaging when your friends join/leave the server
+  join-leave-notifications: true
+
 ```
 </details>
 
@@ -612,6 +627,50 @@ gui:
   effect-selected: "&aSelected"
   effect-disabled: "&cDisabled"
 
+
+  age-title: "&dProfile Age"
+  age-lore:
+    - "&fYour age: &d{age}"
+    - "&7Click to edit (7-99)"
+  age-editor-title: "&d❤ &5Age Editor &d❤"
+  age-decrease-title: "&c-1 Age"
+  age-current-title: "&dCurrent Age: {age}"
+  age-increase-title: "&a+1 Age"
+  age-save-title: "&aSave Age"
+  age-unset-title: "&cRemove Age"
+  my-friends-title: "&dMy Friends"
+  my-friends-lore:
+    - "&fFriends count: &d{count}"
+    - "&7Click to view"
+  friend-requests-toggle-title: "&dFriend Requests"
+  friend-requests-toggle-lore:
+    - "&fCurrent: &d{state}"
+    - "&7Click to toggle"
+  friend-chat-add-title: "&aAdd Friend (Chat)"
+  friend-chat-add-lore:
+    - "&fClick and type a player's name in chat"
+    - "&7A friend request will be sent automatically"
+  profile-friends-title: "&dFriends List"
+  profile-friends-lore:
+    - "&fThis player has &d{count} &ffriends"
+    - "&7Click to view"
+  friends-menu-title: "&d❤ &5{player}'s Friends &d❤"
+  friend-entry-title: "&d{friend}"
+  friend-entry-lore:
+    - "&fFriends since: &d{since}"
+  friend-add-title: "&aAdd Friend"
+  friend-add-lore:
+    - "&fSend a friend request to &d{player}"
+  friend-accept-title: "&aAccept Friend Request"
+  friend-accept-lore:
+    - "&fAccept &d{player}'s &ffriend request"
+  friend-deny-title: "&cDeny Request"
+  friend-deny-lore:
+    - "&fDecline &d{player}'s &ffriend request"
+  friend-remove-title: "&cRemove Friend"
+  friend-remove-lore:
+    - "&fRemove &d{player} &ffrom your friends"
+
   back-button: "&c⬅ Back"
   close-button: "&cClose Menu"
 
@@ -666,6 +725,12 @@ achievements:
   first_mood_set:
     name: "Mood Setter"
     description: "Set your mood for the first time"
+  make_a_friend:
+    name: "New Bestie"
+    description: "Become friends with another player"
+  friends_for_3_months:
+    name: "3-Month Bond"
+    description: "Stay friends for at least 3 months"
 version:
   header: "&d❤ &5VALENTINES VERSION &d❤"
   current: "&fCurrent version: &d{current}"
@@ -679,6 +744,31 @@ version:
   checked: "&aVersion check completed."
   check-failed: "&cVersion check failed. Check console for details."
   unavailable: "&cVersion checker is currently unavailable."
+friends:
+  already-friends: "&cYou are already friends with this player."
+  requests-disabled: "&cThat player has disabled friend requests."
+  max-reached: "&cMaximum friends reached (50)."
+  request-already-sent: "&eYou already sent a friend request to this player."
+  request-sent: "&aFriend request sent to &d{player}&a."
+  request-received: "&d{player} &fsent you a friend request. Open their profile to accept/deny."
+  request-accepted: "&aYou are now friends with &d{player}&a."
+  accept-notify: "&d{player} &aaccepted your friend request."
+  request-denied: "&cFriend request denied."
+  request-denied-notify: "&d{player} &cdeclined your friend request."
+  no-pending: "&cYou don't have a pending request from this player."
+  not-friends: "&cYou are not friends with this player."
+  removed: "&eYou removed &d{player} &efrom your friends."
+  toggle-enabled: "&aYou now accept friend requests."
+  toggle-disabled: "&cYou no longer accept friend requests."
+  join-notify: "&fYour friend &d{friend} &fjoined the server."
+  leave-notify: "&fYour friend &d{friend} &fleft the server."
+  chat-add-prompt: "&fType the player's name in chat to send a friend request."
+  chat-add-not-found: "&cPlayer '&d{player}&c' not found or is not online."
+  chat-add-self: "&cYou can't send a friend request to yourself."
+
+age:
+  updated: "&aYour age is now set to &d{age}&a."
+  removed: "&eYour age was removed from your profile."
 ```
 </details>
 
