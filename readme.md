@@ -1,10 +1,3 @@
----
-
-## IMPORTANT UPDATE
-Before downloading this project, you have to read [Terms of Use](https://github.com/Primly-Project/Documentation/blob/main/terms.md)
-
----
-
 # Valentines
 
 ---
