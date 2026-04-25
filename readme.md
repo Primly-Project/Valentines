@@ -1,7 +1,7 @@
 ---
 
 ## IMPORTANT UPDATE
-Before downloading this project, you have to read [Terms of Use](https://primly.wejkey.org/terms.html)
+Before downloading this project, you have to read [Terms of Use](https://github.com/Primly-Project/Documentation/blob/main/terms.md)
 
 ---
 
@@ -774,4 +774,4 @@ age:
 
 **Note: This plugin is AI optimized but wont ever be rewritten by it or dramatically changed. Because sometimes bug/problem appears and I don't know everything, help is needed.**
 
-[Primly](https://primly.wejkey.org) | [Discord](https://discord.wejkey.org)
+[Documents](https://github.com/Primly-Project/Documentation) | [Discord](https://discord.wejkey.org/)
